@@ -1,3 +1,13 @@
+# Wifi Token System
+
+Admin can generate tokens via admin login. Guest can use this token to login. When the guests login, the system records the IP address, MAC address and token
+and stores this information in the MySQL database. Each guest by default is allowed to use 1 GB of internet per day.
+
+The system also provides API to get access rules. You need to provide list of devices and the API will inform
+the bandwidth control rules. The rules mention whether to ban, allow and limit the speed of each device. The rules can be updated on the network device using selenium.
+
+![image](https://github.com/bulhaa/wifi-token/assets/16064343/24ef26e1-0d6c-491d-a86f-562fb9845373)
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
